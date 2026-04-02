@@ -1,0 +1,39 @@
+.lang-switch {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid rgba(196, 168, 130, 0.15);
+  border-radius: 6px;
+  background: rgba(8, 8, 10, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  cursor: pointer;
+  transition: border-color 0.3s;
+  font-family: var(--font-mono);
+}
+
+.lang-switch:hover {
+  border-color: rgba(196, 168, 130, 0.4);
+}
+
+.lang-opt {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  transition: color 0.3s;
+}
+
+.lang-opt.active {
+  color: var(--accent);
+}
+
+.lang-divider {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  opacity: 0.4;
+}

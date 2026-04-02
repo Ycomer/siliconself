@@ -1,0 +1,39 @@
+.how-steps {
+  display: grid;
+  gap: 1px;
+  margin-top: 2rem;
+  background: rgba(196, 168, 130, 0.06);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.how-step {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  background: var(--bg);
+  padding: 1.5rem;
+  transition: background 0.3s;
+}
+
+.how-step:hover { background: var(--bg-elevated); }
+
+.step-icon {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  opacity: 0.6;
+}
+
+.how-step h4 {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.how-step p {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}

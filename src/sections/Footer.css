@@ -1,0 +1,13 @@
+.site-footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-top: 1px solid rgba(196, 168, 130, 0.06);
+}
+
+.footer-logo {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}

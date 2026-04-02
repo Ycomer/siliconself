@@ -1,0 +1,27 @@
+.manifesto {
+  position: relative;
+  padding: 6rem 2rem 4rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.manifesto-text {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  line-height: 2.2;
+  color: var(--text-secondary);
+}
+
+.manifesto-text .highlight {
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.manifesto-text .accent {
+  color: var(--accent);
+}
+
+.manifesto-break {
+  display: block;
+  height: 2.5rem;
+}

@@ -1,0 +1,56 @@
+.vision-stages {
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+.vision-stages::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--accent), var(--text-dim), transparent);
+}
+
+.vision-stage {
+  position: relative;
+  padding: 0 0 3rem 2rem;
+}
+
+.vision-stage::before {
+  content: '';
+  position: absolute;
+  left: -4px; top: 6px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1.5px solid var(--accent);
+}
+
+.vision-stage.active::before {
+  background: var(--accent);
+  box-shadow: 0 0 12px rgba(196, 168, 130, 0.4);
+}
+
+.stage-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  color: var(--accent);
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.vision-stage h3 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.vision-stage p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
