@@ -1,5 +1,5 @@
 // Replace GA_MEASUREMENT_ID with your actual Google Analytics 4 measurement ID
-export const GA_MEASUREMENT_ID = 'G-8KNKVJJERS';
+export const GA_MEASUREMENT_ID = 'G-3VW90EVJKK';
 
 // Initialize GA - call once on app load
 export function initGA() {
