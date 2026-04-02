@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 export default function SEOHead() {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
-  const url = 'https://siliconself.dev'; // Replace with actual domain
+  const url = 'https://siliconself.xyz'; // Replace with actual domain
 
   return (
     <Helmet>
