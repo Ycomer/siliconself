@@ -53,7 +53,7 @@ export function trackSectionView(section: string) {
 // Type augmentation
 declare global {
   interface Window {
-    dataLayer: IArguments[];
+    dataLayer: unknown[];
     gtag: (command: string, ...args: unknown[]) => void;
   }
 }
