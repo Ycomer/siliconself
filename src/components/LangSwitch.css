@@ -7,18 +7,18 @@
   align-items: center;
   gap: 0.25rem;
   padding: 0.5rem 0.85rem;
-  border: 1px solid rgba(196, 168, 130, 0.15);
+  border: 1px solid var(--accent-dim);
   border-radius: 6px;
-  background: rgba(8, 8, 10, 0.85);
+  background: var(--bg-elevated);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   cursor: pointer;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, background-color 0.3s;
   font-family: var(--font-mono);
 }
 
 .lang-switch:hover {
-  border-color: rgba(196, 168, 130, 0.4);
+  border-color: var(--mirror-edge);
 }
 
 .lang-opt {

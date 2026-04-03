@@ -1,5 +1,6 @@
 import SEOHead from './components/SEOHead';
 import LangSwitch from './components/LangSwitch';
+import ThemeSwitch from './components/ThemeSwitch';
 import Hero from './sections/Hero';
 import Manifesto from './sections/Manifesto';
 import Why from './sections/Why';
@@ -13,6 +14,7 @@ export default function App() {
   return (
     <>
       <SEOHead />
+      <ThemeSwitch />
       <LangSwitch />
       <Hero />
       <Manifesto />

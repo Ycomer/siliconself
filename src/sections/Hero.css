@@ -12,8 +12,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(196, 168, 130, 0.04) 0%, transparent 70%),
-    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(42, 45, 53, 0.3) 0%, transparent 60%);
+    radial-gradient(ellipse 60% 50% at 50% 40%, var(--accent-glow) 0%, transparent 70%),
+    radial-gradient(ellipse 80% 60% at 50% 100%, var(--accent-dim) 0%, transparent 60%);
 }
 
 .mirror-container {
@@ -32,9 +32,9 @@
 .mirror-frame {
   position: absolute;
   inset: 0;
-  border: 1px solid rgba(196, 168, 130, 0.2);
+  border: 1px solid var(--mirror-edge);
   border-radius: 140px 140px 20px 20px;
-  background: linear-gradient(180deg, #2a2d35 0%, rgba(20, 20, 26, 0.9) 100%);
+  background: linear-gradient(180deg, var(--mirror) 0%, var(--bg-card) 100%);
   overflow: hidden;
 }
 
@@ -52,7 +52,7 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: conic-gradient(from 0deg, transparent, rgba(196, 168, 130, 0.05), transparent, rgba(196, 168, 130, 0.03), transparent);
+  background: conic-gradient(from 0deg, transparent, var(--accent-glow), transparent, var(--accent-glow), transparent);
   animation: mirror-sweep 8s linear infinite;
 }
 
@@ -80,7 +80,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(196, 168, 130, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--accent-dim) 0%, transparent 70%);
   filter: blur(20px);
   animation: pulse 4s ease-in-out infinite;
   z-index: 1;
