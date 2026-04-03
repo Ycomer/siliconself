@@ -4,20 +4,23 @@ export const GA_MEASUREMENT_ID = 'G-3VW90EVJKK';
 // Initialize GA - call once on app load
 export function initGA() {
   if (typeof window === 'undefined') return;
+
+  // Set up dataLayer and gtag function first
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function gtag() {
+    // eslint-disable-next-line prefer-rest-params
+    window.dataLayer.push(arguments);
+  };
+  window.gtag('js', new Date());
+  window.gtag('config', GA_MEASUREMENT_ID, {
+    anonymize_ip: true,
+  });
+
+  // Then load the script
   const script = document.createElement('script');
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
   document.head.appendChild(script);
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(...args: unknown[]) {
-    window.dataLayer.push(args);
-  }
-  gtag('js', new Date());
-  gtag('config', GA_MEASUREMENT_ID, {
-    send_page_view: true,
-  });
-  window.gtag = gtag;
 }
 
 // Track custom events
@@ -49,7 +52,7 @@ export function trackSectionView(section: string) {
 // Type augmentation
 declare global {
   interface Window {
-    dataLayer: unknown[];
-    gtag: (...args: unknown[]) => void;
+    dataLayer: IArguments[];
+    gtag: (command: string, ...args: unknown[]) => void;
   }
 }
