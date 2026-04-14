@@ -1,0 +1,13 @@
+name = "silicon-self-subscribe"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# D1 数据库绑定
+[[d1_databases]]
+binding = "DB"
+database_name = "silicon-self-subscribers"
+database_id = "9ea2eaab-9cb7-4725-a313-2cbf0edd41b7" # 部署时填入实际 ID
+
+# 允许的前端域名 (CORS)
+[vars]
+ALLOWED_ORIGINS = "https://siliconself.me,http://localhost:5173"

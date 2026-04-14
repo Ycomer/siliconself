@@ -2,13 +2,16 @@ import { useTranslation } from 'react-i18next';
 import Reveal from '../components/Reveal';
 import './Vision.css';
 
+interface VisionStage {
+  phase: string;
+  title: string;
+  desc: string;
+  note?: string;
+}
+
 export default function Vision() {
   const { t } = useTranslation();
-  const stages = t('vision.stages', { returnObjects: true }) as Array<{
-    phase: string;
-    title: string;
-    desc: string;
-  }>;
+  const stages = t('vision.stages', { returnObjects: true }) as VisionStage[];
 
   return (
     <section className="vision" id="vision">
@@ -22,6 +25,7 @@ export default function Vision() {
               <div className="stage-label">{stage.phase}</div>
               <h3>{stage.title}</h3>
               <p>{stage.desc}</p>
+              {stage.note && <p className="stage-note">{stage.note}</p>}
             </div>
           </Reveal>
         ))}

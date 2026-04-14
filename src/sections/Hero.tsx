@@ -11,12 +11,12 @@ export default function Hero() {
         <div className="mirror-frame">
           <div className="mirror-reflection" />
         </div>
-        <div className="mirror-text">SILICON SELF</div>
+        <div className="mirror-text">{t('hero.brand')}</div>
       </div>
       <h1 className="hero-title">
-        {t('hero.title_1')}<em>{t('hero.title_em')}</em>{t('hero.title_2')}
+        {t('hero.title_1')}
         <br />
-        {t('hero.title_3')}
+        <em>{t('hero.title_2')}</em>
       </h1>
       <p className="hero-subtitle">
         {t('hero.subtitle_1')}<br />{t('hero.subtitle_2')}

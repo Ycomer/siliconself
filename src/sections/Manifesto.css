@@ -12,6 +12,19 @@
   color: var(--text-secondary);
 }
 
+.manifesto-paragraph {
+  margin-bottom: 1.8rem;
+  white-space: pre-line;
+}
+
+.manifesto-highlight {
+  color: var(--accent);
+  font-weight: 400;
+  font-size: clamp(1.1rem, 2.8vw, 1.3rem);
+  margin: 2.5rem 0;
+  white-space: pre-line;
+}
+
 .manifesto-text .highlight {
   color: var(--text-primary);
   font-weight: 400;

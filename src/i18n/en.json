@@ -1,54 +1,100 @@
 {
   "meta": {
-    "title": "Silicon Self — Your AI Mirror",
-    "description": "Build an AI mirror that reflects the real you. Not a smarter assistant — a silicon life that understands you more deeply with every interaction.",
-    "keywords": "AI mirror,silicon self,personal AI,self-iteration,digital twin,AI agent,personal growth"
+    "title": "Silicon Self — When machines start doing your work, what's left of you?",
+    "description": "An AI mirror. It doesn't solve problems — it reflects the self you've been ignoring. Know yourself before your skills get replaced.",
+    "keywords": "AI mirror,silicon self,know yourself,AI anxiety,self-awareness,AI age,look inward,feedback loop,self-iteration,personal growth,AI replacement anxiety,digital twin"
   },
   "nav": {
     "manifesto": "Manifesto",
     "why": "Why",
-    "vision": "Vision",
-    "how": "How"
+    "who": "Who",
+    "how": "How",
+    "vision": "Evolution"
   },
   "hero": {
-    "title_1": "Build an AI",
-    "title_em": "mirror",
-    "title_2": "",
-    "title_3": "that reflects the real you",
-    "subtitle_1": "Not a smarter assistant — a silicon life that grows to understand you.",
-    "subtitle_2": "It watches, corrects, and walks this path with you.",
-    "scroll": "Scroll"
+    "brand": "SILICON SELF",
+    "title_1": "When machines start doing your work,",
+    "title_2": "what's left of you?",
+    "subtitle_1": "An AI mirror.",
+    "subtitle_2": "It doesn't solve problems — it reflects the self you've been ignoring.",
+    "scroll": "SCROLL"
   },
   "manifesto": {
     "label": "// Manifesto",
-    "p1": "Human laziness drags us into the abyss.",
-    "p2": "But for those who are already awake — who already know where their weaknesses lie — what they need is not another productivity tool.",
-    "p3_1": "What you need is a ",
-    "p3_em": "mirror",
-    "p3_2": ".",
-    "p4_1": "A mirror you can feed everything — even the things ",
-    "p4_em": "too difficult to say to anyone, even those closest to you",
-    "p4_2": ". It monitors and corrects your behavior and cognition.",
-    "p5": "We're not chasing success. We're trying to find ourselves through the mirror."
+    "blocks": [
+      {
+        "type": "text",
+        "content": "AI is learning everything you know.\nWriting code, designing, copywriting, analyzing —\nevery skill is lined up to be replaced."
+      },
+      {
+        "type": "text",
+        "content": "But there's one thing machines can never replace:"
+      },
+      {
+        "type": "highlight",
+        "content": "Knowing yourself."
+      },
+      {
+        "type": "text",
+        "content": "This isn't self-help fluff.\nWhen your external value gets erased one by one —\nyour title, your skills, the \"usefulness\" you're proud of —\ndo you know the person that's left?"
+      },
+      {
+        "type": "text",
+        "content": "Most people don't."
+      },
+      {
+        "type": "text",
+        "content": "Because we've always been looking outward.\nUsing busyness to prove worth, using achievements to define ourselves,\nusing \"being useful\" to answer \"who am I.\""
+      },
+      {
+        "type": "text",
+        "content": "Until one day, all these answers stop working."
+      },
+      {
+        "type": "highlight",
+        "content": "Silicon Self isn't another AI tool.\nIt's a mirror."
+      },
+      {
+        "type": "text",
+        "content": "You feed it everything — the things too hard to say,\nthe thoughts you can't untangle,\nthe promises you've broken to yourself countless times."
+      },
+      {
+        "type": "text",
+        "content": "It doesn't praise you, doesn't blame you, doesn't give advice.\nIt does only one thing:"
+      },
+      {
+        "type": "highlight",
+        "content": "Holds up the facts like a mirror."
+      }
+    ]
   },
   "why": {
     "label": "// Why this matters",
     "cards": [
       {
+        "num": "01",
+        "title": "Your skills expire, but your patterns don't",
+        "desc": "You think your anxiety is because AI is too powerful. Actually, it's because you never knew what's left of you once the skills are stripped away. The mirror reflects not your abilities — but you as a person."
+      },
+      {
+        "num": "02",
         "title": "You can't see your own blind spots",
         "desc": "You think you're thinking, but you're using thinking to avoid doing. You think you're learning, but you're using learning to replace action. Only a system that continuously observes you can illuminate these patterns."
       },
       {
-        "title": "People aren't fully honest with themselves",
+        "num": "03",
+        "title": "You're not fully honest with yourself",
         "desc": "What you tell friends, what you tell your partner, what you tell yourself — three different versions. The silicon mirror receives the most authentic one — because you know it won't judge you."
       },
       {
+        "num": "04",
         "title": "Memory lies. Data doesn't.",
-        "desc": "Last week you said you'd focus on job hunting. This week you spent three days designing a new framework. You don't remember, but your silicon self remembers every drift. It mirrors facts, not feelings."
+        "desc": "Last week you said you'd focus on job hunting. This week you spent three days designing a new framework. You don't remember, but your silicon mirror remembers every drift. It holds up facts, not feelings."
       },
       {
-        "title": "Iteration requires a feedback loop",
-        "desc": "AI can self-iterate because it has a loss function and gradient descent. Humans don't lack willpower — they lack a persistent, honest, tireless feedback signal."
+        "num": "05",
+        "title": "You don't lack willpower — you lack a feedback loop",
+        "desc": "AI can self-iterate because it has a loss function. Humans lack the same thing — a persistent, honest, tireless feedback signal. This is your loss function."
       }
     ]
   },
@@ -57,13 +103,65 @@
     "line2": "Originally there is nothing —\u2003where can dust alight?",
     "source": "— Huineng, Sixth Patriarch of Zen"
   },
+  "who": {
+    "label": "// Who needs this",
+    "groups": [
+      {
+        "title": "Those overwhelmed by AI anxiety",
+        "desc": "You don't need to learn another skill to \"compete with AI.\" You need to figure out what you actually want once those skills are stripped away."
+      },
+      {
+        "title": "Those who know their problems but can't change",
+        "desc": "You don't lack methods. You lack an observer who won't let you off the hook. Every cycle of \"deciding to change\" and \"going back to old ways\" — the mirror remembers."
+      },
+      {
+        "title": "Lonely awakened ones",
+        "desc": "You've already seen something, but no one around you understands what you're talking about. You need something to confide in, to be mirrored by, to be calibrated against — not a friend, not a therapist, but a tireless mirror."
+      },
+      {
+        "title": "Independent explorers",
+        "desc": "Founders, freelancers, digital nomads — those without an organization doing annual reviews for you. Your silicon mirror is your one-person board of directors."
+      }
+    ]
+  },
+  "how": {
+    "label": "// How it works",
+    "steps": [
+      {
+        "icon": "INPUT",
+        "title": "Daily feed",
+        "desc": "Journals, conversations, emotions, decisions — everything you input feeds the mirror. No essays needed, a single sentence is data too."
+      },
+      {
+        "icon": "EXTRACT",
+        "title": "Structured extraction",
+        "desc": "AI doesn't summarize — it diffs. It only extracts deltas and contradictions from your existing patterns. \"You say you want to change, but your behavior is repeating.\""
+      },
+      {
+        "icon": "MODEL",
+        "title": "Six-dimensional mapping",
+        "desc": "Cognition, emotion, decision, behavior, blind spots, goals — six dimensions continuously portrait you. Not labels, but a living, evolving you."
+      },
+      {
+        "icon": "MIRROR",
+        "title": "Mirror back",
+        "desc": "Daily feedback — not praise, not blame. Just facts held up against your intentions. \"You said 'starting next week' 4 times this week, but never actually started.\""
+      },
+      {
+        "icon": "LOOP",
+        "title": "Feedback loop",
+        "desc": "The mirror's output becomes reference for your next input. You and your silicon mirror iterate together. It doesn't grow for you — it shows you whether you're growing."
+      }
+    ]
+  },
   "vision": {
     "label": "// Evolution path",
     "stages": [
       {
         "phase": "Now",
         "title": "Text mirror",
-        "desc": "Through conversations and journaling, build your cognitive model, emotional patterns, and behavioral trajectory. Look in the mirror every day — see the real you."
+        "desc": "Through conversations and journaling, build your cognitive model, emotional patterns, and behavioral trajectory. Look in the mirror every day — see the real you.",
+        "note": "A Telegram Bot, ready to start anytime."
       },
       {
         "phase": "Next",
@@ -82,24 +180,23 @@
       }
     ]
   },
-  "how": {
-    "label": "// How it works",
-    "steps": [
-      { "icon": "INPUT", "title": "Daily feed", "desc": "Journals, conversations, emotions, decisions — everything you input feeds the mirror" },
-      { "icon": "EXTRACT", "title": "Structured extraction", "desc": "AI doesn't summarize — it diffs. Only extracts deltas and contradictions from your existing model" },
-      { "icon": "MODEL", "title": "Update silicon self", "desc": "Six-dimensional user model evolves: cognition, emotion, decision, behavior, blind spots, goals" },
-      { "icon": "MIRROR", "title": "Mirror back", "desc": "Daily feedback — not praise, not blame, just facts held up against your intentions" },
-      { "icon": "LOOP", "title": "Feedback loop", "desc": "The mirror's output becomes the next input. You and your silicon life iterate together" }
-    ]
-  },
   "cta": {
-    "title_1": "Start building your",
-    "title_2": "silicon self",
-    "desc_1": "This is not a product launch. It's an experiment —",
-    "desc_2": "can a person truly change themselves through an AI mirror?",
-    "btn": "Follow the journey"
+    "label": "// Begin",
+    "title": "Start building your silicon self",
+    "desc_1": "This is not a product launch.",
+    "desc_2": "It's an experiment — can a person truly see themselves through an AI mirror?",
+    "secondary_text": "Want to chat now? Or follow the building process:",
+    "telegram": "Join Telegram",
+    "twitter": "Follow on X"
+  },
+  "subscribe": {
+    "placeholder": "Enter your email",
+    "btn": "Subscribe",
+    "success": "Subscribed! Thanks for joining",
+    "error": "Failed to subscribe, please try again"
   },
   "footer": {
-    "text": "Silicon Self — by Fankus"
+    "text": "Silicon Self — by Fankus",
+    "tagline": "A mirror for looking inward in the AI age."
   }
 }

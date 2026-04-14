@@ -4,6 +4,14 @@
   border-top: 1px solid rgba(196, 168, 130, 0.06);
 }
 
+.footer-tagline {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
 .footer-logo {
   font-family: var(--font-mono);
   font-size: 0.7rem;

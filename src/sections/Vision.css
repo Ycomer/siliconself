@@ -54,3 +54,11 @@
   color: var(--text-secondary);
   line-height: 1.8;
 }
+
+.stage-note {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  opacity: 0.8;
+  font-style: italic;
+}

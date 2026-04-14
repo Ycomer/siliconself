@@ -1,0 +1,17 @@
+{
+  "name": "silicon-self-subscribe-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create silicon-self-subscribers",
+    "db:init": "wrangler d1 execute silicon-self-subscribers --file=./schema.sql",
+    "db:init:local": "wrangler d1 execute silicon-self-subscribers --local --file=./schema.sql"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "typescript": "^5.0.0",
+    "wrangler": "^3.91.0"
+  }
+}

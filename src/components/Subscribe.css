@@ -1,0 +1,72 @@
+.subscribe-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 2rem;
+}
+
+.subscribe-input-wrap {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--accent-dim);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.subscribe-input-wrap:focus-within {
+  border-color: var(--accent);
+}
+
+.subscribe-input {
+  flex: 1;
+  padding: 0.85rem 1rem;
+  background: var(--bg-elevated);
+  border: none;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.subscribe-input::placeholder {
+  color: var(--text-dim);
+}
+
+.subscribe-input:disabled {
+  opacity: 0.6;
+}
+
+.subscribe-btn {
+  padding: 0.85rem 1.5rem;
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.subscribe-btn:disabled {
+  cursor: default;
+}
+
+.subscribe-msg {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.subscribe-msg.success {
+  color: var(--accent);
+}
+
+.subscribe-msg.error {
+  color: #c47070;
+}

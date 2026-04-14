@@ -1,16 +1,10 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 
-export type ThemeMode = 'light' | 'dark' | 'auto';
-
 interface ThemeContextType {
-  mode: ThemeMode;
   actualTheme: 'light' | 'dark';
-  setMode: (mode: ThemeMode) => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
-
-const STORAGE_KEY = 'silicon-self-theme';
 
 function getTimeBasedTheme(): 'light' | 'dark' {
   const hour = new Date().getHours();
@@ -19,41 +13,19 @@ function getTimeBasedTheme(): 'light' | 'dark' {
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [mode, setModeState] = useState<ThemeMode>(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved === 'light' || saved === 'dark' || saved === 'auto') {
-      return saved;
-    }
-    return 'auto';
-  });
+  const [actualTheme, setActualTheme] = useState<'light' | 'dark'>(getTimeBasedTheme);
 
-  const [actualTheme, setActualTheme] = useState<'light' | 'dark'>(() => {
-    if (mode === 'auto') {
-      return getTimeBasedTheme();
-    }
-    return mode;
-  });
-
-  const setMode = (newMode: ThemeMode) => {
-    setModeState(newMode);
-    localStorage.setItem(STORAGE_KEY, newMode);
-  };
-
-  // 更新实际主题
+  // 自动根据时间切换主题
   useEffect(() => {
-    if (mode === 'auto') {
+    setActualTheme(getTimeBasedTheme());
+
+    // 每分钟检查一次时间，自动切换主题
+    const interval = setInterval(() => {
       setActualTheme(getTimeBasedTheme());
+    }, 60000);
 
-      // 每分钟检查一次时间，自动切换主题
-      const interval = setInterval(() => {
-        setActualTheme(getTimeBasedTheme());
-      }, 60000);
-
-      return () => clearInterval(interval);
-    } else {
-      setActualTheme(mode);
-    }
-  }, [mode]);
+    return () => clearInterval(interval);
+  }, []);
 
   // 应用主题到 document
   useEffect(() => {
@@ -61,7 +33,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }, [actualTheme]);
 
   return (
-    <ThemeContext.Provider value={{ mode, actualTheme, setMode }}>
+    <ThemeContext.Provider value={{ actualTheme }}>
       {children}
     </ThemeContext.Provider>
   );
