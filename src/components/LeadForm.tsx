@@ -77,7 +77,7 @@ export default function LeadForm({site, language = 'zh'}: Props) {
       <h3>{zh ? '下一步，开始一个小实验。' : 'Your next step starts here.'}</h3>
       <p>{zh ? 'Fankus 会收到你的申请。后续将按你选择的兴趣联系你；这里不会自动扣费。' : 'Fankus will receive your request and follow up on your selected interest. There is no automatic charge.'}</p>
       <a className="lead-button" href={site === 'ycomer' ? '/field-guide' : '#experiment'}>{zh ? (site === 'ycomer' ? '打开 7 天产品验证清单 →' : '开始本地 7 天记录 →') : 'Start your local seven-day journal →'}</a>
-      <p><a href="mailto:hello@siliconself.xyz">{zh ? '也可以直接写信给 Fankus' : 'Or write directly to Fankus'}</a></p>
+      <p><a href="mailto:hello@fankus.me">{zh ? '也可以直接写信给 Fankus' : 'Or write directly to Fankus'}</a></p>
     </div> : <form onSubmit={submit} onFocus={() => {if (!started.current) {started.current = true; track('lead_form_start');}}}>
       <label>{zh ? '你的邮箱' : 'Your email'}<input name="email" type="email" autoComplete="email" maxLength={254} placeholder="you@example.com" required /></label>
       <label>{zh ? '你最关心什么？' : 'What would you like to explore?'}
@@ -97,7 +97,7 @@ export default function LeadForm({site, language = 'zh'}: Props) {
       <div ref={widget} className="lead-verification" />
       <button className="lead-button" type="submit" disabled={!ready || status === 'loading'}>{status === 'loading' ? (zh ? '正在保存…' : 'Saving…') : site === 'ycomer' ? '订阅构建笔记，获取清单 →' : (zh ? '申请 7 天陪伴内测 →' : 'Apply for the guided pilot →')}</button>
       {error && <p className="lead-error" role="alert">{error}</p>}
-      <p className="lead-fine">{zh ? '无需付费。申请由 Cloudflare 安全保存。' : 'Free to apply. Your request is stored on Cloudflare.'} <a href="mailto:hello@siliconself.xyz">{zh ? '直接联系' : 'Email Fankus'}</a></p>
+      <p className="lead-fine">{zh ? '无需付费。申请由 Cloudflare 安全保存。' : 'Free to apply. Your request is stored on Cloudflare.'} <a href="mailto:hello@fankus.me">{zh ? '直接联系' : 'Email Fankus'}</a></p>
     </form>}
   </div>;
 }

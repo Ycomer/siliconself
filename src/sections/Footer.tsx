@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-tagline">{t('footer.tagline')}</div>
-      <div className="footer-logo">{t('footer.text')}</div>
+      <a className="footer-logo" href="https://fankus.me">{t('footer.text')}</a>
     </footer>
   );
 }
