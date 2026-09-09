@@ -1,10 +1,5 @@
-import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
-
-interface ThemeContextType {
-  actualTheme: 'light' | 'dark';
-}
-
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+import { useState, useEffect, type ReactNode } from 'react';
+import {ThemeContext} from './theme';
 
 function getTimeBasedTheme(): 'light' | 'dark' {
   const hour = new Date().getHours();
@@ -17,8 +12,6 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   // 自动根据时间切换主题
   useEffect(() => {
-    setActualTheme(getTimeBasedTheme());
-
     // 每分钟检查一次时间，自动切换主题
     const interval = setInterval(() => {
       setActualTheme(getTimeBasedTheme());
@@ -37,12 +30,4 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       {children}
     </ThemeContext.Provider>
   );
-}
-
-export function useTheme() {
-  const context = useContext(ThemeContext);
-  if (context === undefined) {
-    throw new Error('useTheme must be used within a ThemeProvider');
-  }
-  return context;
 }

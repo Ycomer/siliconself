@@ -1,25 +1,26 @@
 import { useTranslation } from 'react-i18next';
 import { trackCTAClick } from '../utils/analytics';
 import Reveal from '../components/Reveal';
-import TallyEmbed from '../components/TallyEmbed';
+import LeadForm from '../components/LeadForm';
 import './CTA.css';
 
 export default function CTA() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const zh = i18n.language.startsWith('zh');
 
   return (
-    <div className="cta">
+    <div className="cta" id="join">
       <Reveal>
         <div className="section-label">{t('cta.label')}</div>
       </Reveal>
       <Reveal delay={0.1}>
-        <h2>{t('cta.title')}</h2>
+        <h2>{zh ? '让一次记录，成为持续的反馈。' : 'Turn a single entry into a lasting practice.'}</h2>
         <p>
-          {t('cta.desc_1')}<br />{t('cta.desc_2')}
+          {zh ? '正在招募 7 天陪伴实验的首批参与者。留下你的关注点，Fankus 会联系你确认参与方式。你也可以先使用上方的免费本地记录。' : 'We are recruiting the first participants for a guided seven-day experiment. Leave your focus and Fankus will follow up with participation details. The local journal above is free to use now.'}
         </p>
 
         <div className="cta-form">
-          <TallyEmbed />
+          <LeadForm site="siliconself" language={i18n.language} />
         </div>
 
         <p className="cta-secondary-text">{t('cta.secondary_text')}</p>
